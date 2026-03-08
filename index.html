@@ -1,101 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Midow Marketing | Premium Digital Agency</title>
+<title>Midow Marketing | Web & Digital Agency</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
 
 body{
 background:#0f0f0f;
 color:white;
+line-height:1.6;
 }
+
+/* HEADER */
 
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 60px;
+padding:18px 8%;
 background:black;
 position:sticky;
 top:0;
+z-index:1000;
+}
+
+.logo img{
+height:40px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:0 15px;
+margin-left:18px;
+font-weight:500;
 }
 
+/* HERO */
+
 .hero{
-height:90vh;
+min-height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:40px 20px;
+
 background:
-radial-gradient(circle at top,#1a1a1a,#000);
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url("banner.jpg") center/cover no-repeat;
 }
 
 .hero h1{
-font-size:60px;
-background:linear-gradient(45deg,#f5d36a,#d4af37);
--webkit-background-clip:text;
-color:transparent;
+font-size:48px;
+color:#d4af37;
+}
+
+.hero p{
+max-width:600px;
+margin-top:10px;
 }
 
 .btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
 background:#d4af37;
 color:black;
-padding:14px 32px;
 border-radius:30px;
-margin-top:25px;
 text-decoration:none;
 font-weight:600;
 }
 
+/* SECTIONS */
+
 section{
-padding:80px 60px;
+padding:80px 8%;
 }
 
 .section-title{
 text-align:center;
-font-size:40px;
+font-size:34px;
 margin-bottom:50px;
 }
+
+/* GRID */
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+gap:28px;
 }
+
+/* CARD */
 
 .card{
 background:#1a1a1a;
-padding:30px;
+padding:28px;
 border-radius:10px;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-6px);
+}
+
+.card a{
+display:inline-block;
+margin-top:12px;
+background:#d4af37;
+color:black;
+padding:8px 16px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
 }
 
 .price{
 color:#d4af37;
-font-size:26px;
-margin-top:10px;
+font-size:22px;
+margin-top:8px;
 }
 
-.booking{
+/* CONTACT */
+
+.contact{
 max-width:500px;
 margin:auto;
 background:#1a1a1a;
@@ -103,8 +137,8 @@ padding:30px;
 border-radius:10px;
 }
 
-.booking input,
-.booking textarea{
+.contact input,
+.contact textarea{
 width:100%;
 padding:10px;
 margin:10px 0;
@@ -112,13 +146,15 @@ border:none;
 border-radius:5px;
 }
 
-.booking button{
+.contact button{
 background:#d4af37;
-border:none;
 padding:12px;
+border:none;
 width:100%;
 font-weight:bold;
 }
+
+/* FOOTER */
 
 footer{
 background:black;
@@ -126,45 +162,72 @@ text-align:center;
 padding:30px;
 }
 
+/* WHATSAPP */
+
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-padding:15px 20px;
+padding:14px 18px;
 color:white;
 border-radius:50px;
 text-decoration:none;
 }
 
-</style>
+/* MOBILE */
 
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+nav{
+text-align:center;
+}
+
+}
+</style>
 </head>
 
 <body>
 
 <header>
 
-<h2>Midow Marketing</h2>
+<div class="logo">
+<img src="logo.png">
+</div>
 
 <nav>
+<a href="#home">Home</a>
 <a href="#services">Services</a>
 <a href="#portfolio">Portfolio</a>
 <a href="#pricing">Pricing</a>
+<a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 
 </header>
 
-<div class="hero">
+<!-- HERO -->
 
-<h1>Premium Websites & Digital Growth</h1>
+<section class="hero" id="home">
 
-<p>We design high-converting websites and digital marketing campaigns for modern businesses.</p>
+<h1>Premium Websites & Digital Marketing</h1>
+
+<p>Midow Marketing helps businesses grow online with modern websites and digital marketing.</p>
 
 <a class="btn" href="#portfolio">View Portfolio</a>
 
-</div>
+</section>
+
+<!-- SERVICES -->
 
 <section id="services">
 
@@ -174,7 +237,7 @@ text-decoration:none;
 
 <div class="card">
 <h3>Website Development</h3>
-<p>Modern responsive business websites.</p>
+<p>Professional responsive websites for businesses.</p>
 </div>
 
 <div class="card">
@@ -184,17 +247,19 @@ text-decoration:none;
 
 <div class="card">
 <h3>Product Shoot</h3>
-<p>Professional product photography & reels.</p>
+<p>Product photography & reels content creation.</p>
 </div>
 
 <div class="card">
 <h3>Poster & Banner Design</h3>
-<p>Creative advertising visuals.</p>
+<p>Creative marketing visuals for brands.</p>
 </div>
 
 </div>
 
 </section>
+
+<!-- PORTFOLIO -->
 
 <section id="portfolio">
 
@@ -205,26 +270,32 @@ text-decoration:none;
 <div class="card">
 <h3>Siya Organic</h3>
 <p>Ecommerce Website</p>
+<a href="https://midowwebcreater.github.io/Siya-organic-/" target="_blank">Open Website</a>
 </div>
 
 <div class="card">
 <h3>Skyline Realty</h3>
 <p>Real Estate Website</p>
+<a href="https://midowwebcreater.github.io/Skyline-Realty-Real-Estate/" target="_blank">Open Website</a>
 </div>
 
 <div class="card">
 <h3>IronFit Gym</h3>
 <p>Fitness Website</p>
+<a href="https://midowwebcreater.github.io/Ironfit-gym/" target="_blank">Open Website</a>
 </div>
 
 <div class="card">
 <h3>Glow Beauty Salon</h3>
 <p>Salon Website</p>
+<a href="https://midowwebcreater.github.io/Glow-Beauty-Salon/" target="_blank">Open Website</a>
 </div>
 
 </div>
 
 </section>
+
+<!-- PRICING -->
 
 <section id="pricing">
 
@@ -234,17 +305,17 @@ text-decoration:none;
 
 <div class="card">
 <h3>Website Development</h3>
-<p class="price">₹7k – ₹30k</p>
+<p class="price">₹7,000 – ₹30,000</p>
 </div>
 
 <div class="card">
 <h3>Social Media Marketing</h3>
-<p class="price">₹5k – ₹20k / month</p>
+<p class="price">₹5,000 – ₹20,000 / month</p>
 </div>
 
 <div class="card">
-<h3>Product Content</h3>
-<p class="price">₹3k – ₹8k</p>
+<h3>Product Content Creation</h3>
+<p class="price">₹3,000 – ₹8,000</p>
 </div>
 
 <div class="card">
@@ -256,35 +327,42 @@ text-decoration:none;
 
 <br><br>
 
-<div style="text-align:center;background:#1a1a1a;padding:35px;border-radius:10px;max-width:700px;margin:auto">
+<div style="text-align:center;background:#1a1a1a;padding:30px;border-radius:10px">
 
 <h2 style="color:#d4af37">Free Demo Website</h2>
-
-<p style="margin-top:15px">
-We offer a free demo website before payment.
-</p>
-
-<a href="#contact" class="btn">Request Free Demo</a>
+<p>See the website design before payment.</p>
 
 </div>
 
 </section>
 
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About</h2>
+
+<p style="max-width:700px;margin:auto;text-align:center">
+Midow Marketing is a digital agency specializing in website design, branding and online marketing for businesses.
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
 <section id="contact">
 
-<h2 class="section-title">Book Consultation</h2>
+<h2 class="section-title">Contact</h2>
 
-<div class="booking">
+<div class="contact">
 
 <form>
 
 <input type="text" placeholder="Your Name">
-
 <input type="email" placeholder="Email">
-
 <textarea placeholder="Project details"></textarea>
 
-<button type="submit">Send Request</button>
+<button>Send Message</button>
 
 </form>
 
@@ -299,7 +377,7 @@ We offer a free demo website before payment.
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/918793727113">Chat</a>
+<a class="whatsapp" href="https://wa.me/918793727113">WhatsApp</a>
 
 </body>
 </html>
