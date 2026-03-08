@@ -5,79 +5,77 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Midow Marketing | Premium Web & Marketing Agency</title>
-
-<link rel="icon" href="favicon.png">
+<title>Midow Marketing | Premium Digital Agency</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <style>
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
 
-body{background:#0f0f0f;color:white;line-height:1.6}
+body{
+background:#0f0f0f;
+color:white;
+}
 
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 70px;
+padding:20px 60px;
 background:black;
 position:sticky;
 top:0;
-z-index:1000;
 }
-
-header img{height:40px}
 
 nav a{
 color:white;
 text-decoration:none;
 margin:0 15px;
-font-weight:500;
 }
 
 .hero{
-height:92vh;
-background:
-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.85)),
-url("banner.jpg") center/cover;
+height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+background:
+radial-gradient(circle at top,#1a1a1a,#000);
 }
 
-.hero h1{font-size:60px;margin-bottom:10px}
-
-.hero p{max-width:650px}
+.hero h1{
+font-size:60px;
+background:linear-gradient(45deg,#f5d36a,#d4af37);
+-webkit-background-clip:text;
+color:transparent;
+}
 
 .btn{
-background:linear-gradient(45deg,#d4af37,#f5d36a);
+background:#d4af37;
 color:black;
 padding:14px 32px;
-margin-top:25px;
-display:inline-block;
-text-decoration:none;
 border-radius:30px;
+margin-top:25px;
+text-decoration:none;
 font-weight:600;
-transition:0.3s;
 }
 
-.btn:hover{transform:scale(1.05)}
+section{
+padding:80px 60px;
+}
 
-section{padding:90px 80px}
-
-.section-title{text-align:center;font-size:40px;margin-bottom:60px}
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:35px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
 .card{
@@ -89,37 +87,26 @@ transition:0.3s;
 
 .card:hover{
 transform:translateY(-8px);
-box-shadow:0 20px 40px rgba(0,0,0,0.6);
 }
 
-.portfolio a{
+.price{
 color:#d4af37;
-text-decoration:none;
-display:inline-block;
+font-size:26px;
 margin-top:10px;
 }
 
-.price{font-size:28px;color:#d4af37;margin:10px 0}
-
-.testimonial{
-background:#1a1a1a;
-padding:25px;
-border-radius:8px;
-}
-
 .booking{
-max-width:520px;
+max-width:500px;
 margin:auto;
 background:#1a1a1a;
-padding:35px;
+padding:30px;
 border-radius:10px;
 }
 
 .booking input,
-.booking textarea,
-.booking select{
+.booking textarea{
 width:100%;
-padding:12px;
+padding:10px;
 margin:10px 0;
 border:none;
 border-radius:5px;
@@ -127,10 +114,10 @@ border-radius:5px;
 
 .booking button{
 background:#d4af37;
+border:none;
 padding:12px;
 width:100%;
-border:none;
-font-weight:600;
+font-weight:bold;
 }
 
 footer{
@@ -148,12 +135,6 @@ padding:15px 20px;
 color:white;
 border-radius:50px;
 text-decoration:none;
-font-weight:600;
-}
-
-@media(max-width:768px){
-.hero h1{font-size:36px}
-section{padding:60px 25px}
 }
 
 </style>
@@ -164,30 +145,26 @@ section{padding:60px 25px}
 
 <header>
 
-<img src="logo.png">
+<h2>Midow Marketing</h2>
 
 <nav>
 <a href="#services">Services</a>
 <a href="#portfolio">Portfolio</a>
 <a href="#pricing">Pricing</a>
-<a href="#booking">Contact</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
 
-<!-- HERO -->
-
 <div class="hero">
 
-<h1>Premium Websites That Grow Businesses</h1>
+<h1>Premium Websites & Digital Growth</h1>
 
-<p>Midow Marketing builds high-converting websites, digital marketing campaigns and creative brand content.</p>
+<p>We design high-converting websites and digital marketing campaigns for modern businesses.</p>
 
-<a class="btn" href="#portfolio">View Our Work</a>
+<a class="btn" href="#portfolio">View Portfolio</a>
 
 </div>
-
-<!-- SERVICES -->
 
 <section id="services">
 
@@ -197,59 +174,57 @@ section{padding:60px 25px}
 
 <div class="card">
 <h3>Website Development</h3>
-<p>Professional business websites and landing pages built for conversions.</p>
+<p>Modern responsive business websites.</p>
 </div>
 
 <div class="card">
 <h3>Social Media Marketing</h3>
-<p>Instagram & Facebook growth with strategic content and marketing.</p>
+<p>Instagram & Facebook growth strategies.</p>
 </div>
 
 <div class="card">
-<h3>Product Shoot & Content</h3>
-<p>Product photography, reels and brand promotional videos.</p>
+<h3>Product Shoot</h3>
+<p>Professional product photography & reels.</p>
 </div>
 
 <div class="card">
 <h3>Poster & Banner Design</h3>
-<p>High-quality creatives for ads, social media and branding.</p>
+<p>Creative advertising visuals.</p>
 </div>
 
 </div>
 
 </section>
-
-<!-- PORTFOLIO -->
 
 <section id="portfolio">
 
-<h2 class="section-title">Our Work</h2>
+<h2 class="section-title">Portfolio</h2>
 
-<div class="grid portfolio">
+<div class="grid">
 
-<div class="card"><h3>Siya Organic</h3><p>Ecommerce Website</p><a href="https://midowwebcreater.github.io/Siya-organic-/" target="_blank">View Project</a></div>
+<div class="card">
+<h3>Siya Organic</h3>
+<p>Ecommerce Website</p>
+</div>
 
-<div class="card"><h3>ETBS</h3><p>Business Website</p><a href="https://midowwebcreater.github.io/ETBS/" target="_blank">View Project</a></div>
+<div class="card">
+<h3>Skyline Realty</h3>
+<p>Real Estate Website</p>
+</div>
 
-<div class="card"><h3>Shadow Tattoo Ink</h3><p>Brand Website</p><a href="https://midowwebcreater.github.io/SHADOW-TATTOO-INK-/" target="_blank">View Project</a></div>
+<div class="card">
+<h3>IronFit Gym</h3>
+<p>Fitness Website</p>
+</div>
 
-<div class="card"><h3>Exclusive Tattoos</h3><p>Tattoo Studio</p><a href="https://midowwebcreater.github.io/Exclusive-tattoos/" target="_blank">View Project</a></div>
-
-<div class="card"><h3>Deeplight Restaurant</h3><p>Restaurant Website</p><a href="https://midowwebcreater.github.io/DEEPLIGHT-premium-RESTAURANT/" target="_blank">View Project</a></div>
-
-<div class="card"><h3>Own Drive</h3><p>Car Rental Website</p><a href="https://midowwebcreater.github.io/OWN-DRIVE/" target="_blank">View Project</a></div>
-
-<div class="card"><h3>Skyline Realty</h3><p>Real Estate Website</p><a href="https://midowwebcreater.github.io/Skyline-Realty-Real-Estate/" target="_blank">View Project</a></div>
-
-<div class="card"><h3>IronFit Gym</h3><p>Fitness Website</p><a href="https://midowwebcreater.github.io/Ironfit-gym/" target="_blank">View Project</a></div>
-
-<div class="card"><h3>Glow Beauty Salon</h3><p>Salon Website</p><a href="https://midowwebcreater.github.io/Glow-Beauty-Salon/" target="_blank">View Project</a></div>
+<div class="card">
+<h3>Glow Beauty Salon</h3>
+<p>Salon Website</p>
+</div>
 
 </div>
 
 </section>
-
-<!-- PRICING -->
 
 <section id="pricing">
 
@@ -259,26 +234,22 @@ section{padding:60px 25px}
 
 <div class="card">
 <h3>Website Development</h3>
-<p class="price">₹7,000 – ₹30,000+</p>
-<p>Modern business websites and landing pages.</p>
+<p class="price">₹7k – ₹30k</p>
 </div>
 
 <div class="card">
 <h3>Social Media Marketing</h3>
-<p class="price">₹5,000 – ₹20,000 / month</p>
-<p>Content creation and brand growth.</p>
+<p class="price">₹5k – ₹20k / month</p>
 </div>
 
 <div class="card">
-<h3>Product Content Creation</h3>
-<p class="price">₹3,000 – ₹8,000</p>
-<p>Product photos, reels and promotional videos.</p>
+<h3>Product Content</h3>
+<p class="price">₹3k – ₹8k</p>
 </div>
 
 <div class="card">
-<h3>Poster & Banner Design</h3>
-<p class="price">₹300 – ₹2,000</p>
-<p>Professional marketing creatives.</p>
+<h3>Poster Design</h3>
+<p class="price">₹300 – ₹2000</p>
 </div>
 
 </div>
@@ -290,65 +261,28 @@ section{padding:60px 25px}
 <h2 style="color:#d4af37">Free Demo Website</h2>
 
 <p style="margin-top:15px">
-We create a free demo website before payment.  
-See the design first and pay only if you like it.
+We offer a free demo website before payment.
 </p>
 
-<a href="#booking" class="btn">Request Free Demo</a>
+<a href="#contact" class="btn">Request Free Demo</a>
 
 </div>
 
 </section>
 
-<!-- TESTIMONIALS -->
+<section id="contact">
 
-<section>
-
-<h2 class="section-title">Client Feedback</h2>
-
-<div class="grid">
-
-<div class="testimonial">
-<p>"Amazing website design and fast delivery."</p>
-<strong>Small Business Owner</strong>
-</div>
-
-<div class="testimonial">
-<p>"Professional design and excellent communication."</p>
-<strong>Startup Founder</strong>
-</div>
-
-<div class="testimonial">
-<p>"Our website conversions improved after redesign."</p>
-<strong>Ecommerce Brand</strong>
-</div>
-
-</div>
-
-</section>
-
-<!-- BOOKING -->
-
-<section id="booking">
-
-<h2 class="section-title">Book Free Consultation</h2>
+<h2 class="section-title">Book Consultation</h2>
 
 <div class="booking">
 
-<form id="form">
+<form>
 
-<input type="text" name="name" placeholder="Your Name" required>
+<input type="text" placeholder="Your Name">
 
-<input type="email" name="email" placeholder="Your Email" required>
+<input type="email" placeholder="Email">
 
-<select name="service">
-<option>Website Development</option>
-<option>Social Media Marketing</option>
-<option>Product Content Creation</option>
-<option>Poster / Banner Design</option>
-</select>
-
-<textarea name="message" placeholder="Project details"></textarea>
+<textarea placeholder="Project details"></textarea>
 
 <button type="submit">Send Request</button>
 
@@ -362,28 +296,10 @@ See the design first and pay only if you like it.
 
 <p>Midow Marketing</p>
 <p>Email: midowwebcreater@gmail.com</p>
-<p>WhatsApp: +91 8793727113</p>
 
 </footer>
 
 <a class="whatsapp" href="https://wa.me/918793727113">Chat</a>
-
-<script>
-
-(function(){
-emailjs.init("Xr2dQ_p-jNaaYlbtw");
-})();
-
-document.getElementById("form").addEventListener("submit",function(e){
-e.preventDefault();
-
-emailjs.sendForm("service_aw1bv2e","template_hw4tjcf",this)
-.then(()=>alert("Message sent successfully"))
-.catch(()=>alert("Error sending message"));
-
-});
-
-</script>
 
 </body>
 </html>
